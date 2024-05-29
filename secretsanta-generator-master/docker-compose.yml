@@ -1,11 +1,1 @@
-version: "3.9"
 
-services:
-  santa:
-    container_name: santa1
-    image: dpbhai/mysecretsanta:01  # Specify the image name
-    ports:
-      - "8081:8080"
-    volumes:
-      - ./target:/usr/src/app/target
-    restart: always
